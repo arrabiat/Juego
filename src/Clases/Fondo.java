@@ -1,14 +1,11 @@
 package Clases;
 
-import java.awt.Color;
-import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import java.awt.*;
-
 
 public class Fondo extends JLabel {
 
@@ -43,9 +40,9 @@ public class Fondo extends JLabel {
     g.setColor(Color.CYAN);
     g.fillRect(0, 0, 350, 700);
     g.setColor(Color.black);
-    Font f1 = new Font("Arial", 30,30);
+    Font f1 = new Font("Arial", 30, 30);
     g.setFont(f1);
-    g.drawString(""+plat.puntos,10,40);
+    g.drawString("" + plat.puntos, 10, 40);
     g.setColor(Color.black);
     plat.paint(g);
     per.paint(g);
@@ -73,7 +70,7 @@ public class Fondo extends JLabel {
           per.y = 600;
           per.x = 150;
           per.alto = 450;
-          plat.puntos=0;
+          plat.puntos = 0;
           salto = true;
         }
 
@@ -98,6 +95,7 @@ public class Fondo extends JLabel {
     vent.setSize(350, 730);
     vent.setVisible(true);
     vent.setLocationRelativeTo(null);
+    // vent.set
     vent.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     for (;;) {
       try {
