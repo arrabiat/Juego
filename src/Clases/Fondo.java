@@ -94,7 +94,6 @@ public class Fondo extends JLabel {
     vent.setSize(350, 730);
     vent.setVisible(true);
     vent.setLocationRelativeTo(null);
-    // vent.set
     vent.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     for (;;) {
       try {
@@ -103,7 +102,7 @@ public class Fondo extends JLabel {
       } catch (Exception e) {
       }
       if (gameover) {
-        // break;
+        // brekandpasds
       }
     }
   }
