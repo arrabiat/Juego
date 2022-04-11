@@ -103,6 +103,7 @@ public class Fondo extends JLabel {
       }
       if (gameover) {
         // brakeado
+        // brekandpasds
       }
     }
   }
