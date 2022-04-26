@@ -29,7 +29,7 @@ public class Fondo extends JLabel {
 
       @Override
       public void keyReleased(KeyEvent e) {
-
+        per.keyReleased(e);
       }
     });
     setFocusable(true);
@@ -46,8 +46,8 @@ public class Fondo extends JLabel {
     g.setColor(Color.black);
     plat.paint(g);
     per.paint(g);
+
     if (per.y != per.alto && salto == true) {
-      per.saltar();
       plat.y1++;
       plat.y2++;
       plat.y3++;
@@ -58,14 +58,12 @@ public class Fondo extends JLabel {
     } else {
       salto = false;
       if (salto == false) {
-        per.caer();
-
         if (colision()) {
           per.suelo();
           salto = true;
         }
         if (!colision() && per.y > 700) {
-          System.out.println("perdiste");
+          // System.out.println("perdiste");
           gameover = true;
           per.y = 600;
           per.x = 150;
