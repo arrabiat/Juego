@@ -48,6 +48,7 @@ public class Fondo extends JLabel {
     per.paint(g);
 
     if (per.y != per.alto && salto == true) {
+      per.posicion="salto";
       plat.y1++;
       plat.y2++;
       plat.y3++;
@@ -57,6 +58,7 @@ public class Fondo extends JLabel {
       plat.y7++;
     } else {
       salto = false;
+      per.posicion="caer";
       if (salto == false) {
         if (colision()) {
           per.suelo();

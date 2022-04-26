@@ -55,7 +55,6 @@ public class Persona {
   }
 
   public void saltar() {  
-    posicion= "salto";
     y-=2;
   }
 
