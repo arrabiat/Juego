@@ -108,3 +108,4 @@ public class Fondo extends JLabel {
     }
   }
 }
+//fondo
